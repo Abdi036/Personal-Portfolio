@@ -1,0 +1,23 @@
+.sidebar {
+  border: 2px solid green;
+  padding: 1rem;
+}
+
+.profile {
+  border: 2px solid blue;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.profile img {
+  border: 5px double gray;
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+}
+
+.navbar {
+  border: 2px solid blue;
+  text-align: center;
+  padding: 2rem 1rem;
+}
