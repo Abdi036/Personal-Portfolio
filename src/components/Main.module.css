@@ -1,3 +1,7 @@
 .main {
   border: 2px solid yellow;
+  flex: 1;
+  width: 80%;
+  margin-left: 20%;
+  overflow-y: auto;
 }

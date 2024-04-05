@@ -4,6 +4,7 @@ export default function SideBar() {
     <div className={styles.sidebar}>
       <Profile />
       <NavBar />
+      <SocialMedias />
     </div>
   );
 }
@@ -12,7 +13,7 @@ function Profile() {
   return (
     <div className={styles.profile}>
       <img src="./public/img-1.jpg" alt="Profile Picrute" />
-      <h2>USER NAME</h2>
+      <h3>USER NAME</h3>
     </div>
   );
 }
@@ -29,5 +30,15 @@ function NavBar() {
         <li>Contact</li>
       </ul>
     </nav>
+  );
+}
+
+function SocialMedias() {
+  return (
+    <div className={styles.socialMedia}>
+      <h1>X</h1>
+      <h1>X</h1>
+      <h1>X</h1>
+    </div>
   );
 }

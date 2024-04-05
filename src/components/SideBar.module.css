@@ -1,23 +1,44 @@
 .sidebar {
   border: 2px solid green;
-  padding: 1rem;
+  width: 20%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  overflow-y: auto;
 }
 
 .profile {
-  border: 2px solid blue;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2rem 0 0 0;
 }
 
 .profile img {
   border: 5px double gray;
   border-radius: 100px;
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
+}
+.profile h3 {
+  padding: 0.5rem;
 }
 
 .navbar {
-  border: 2px solid blue;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 1rem;
+}
+.navbar ul li {
+  list-style-type: none;
+  padding: 0.5rem 2rem 0.8rem;
+  font-size: large;
+  font-weight: 600;
+}
+
+.socialMedia {
+  border: 2px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
