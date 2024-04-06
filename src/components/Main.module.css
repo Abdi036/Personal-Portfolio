@@ -9,15 +9,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("/pexels-ovan-57690.jpg");
+  background: url("/pexels-chris-g-1909572.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 98.5vh;
+  min-height: 100vh;
 }
 .welcome h2 {
   font-size: 3rem;
   font-weight: 700;
+  text-shadow: 2px 2px 4px #0cc87d8e;
 }
 .welcome h3 {
   font-size: 2rem;
@@ -26,6 +27,26 @@
 .welcome h4 {
   font-size: 1.4rem;
   font-weight: 600;
+}
+
+.contactBtn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  background: #0000007e;
+  border: 2px solid #0cc87c;
+  border-radius: 30px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+.contactBtn:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.contactBtn:active {
+  opacity: 1;
+  transition: 0.5s;
+  transform: translateY(3px);
 }
 
 /* About me section */
@@ -59,7 +80,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 50vh;
+  min-height: 100vh;
   padding: 2rem 0;
   background-color: #232323;
 }
@@ -95,9 +116,9 @@
 }
 
 /* portfolio.css */
-
 .portfolio {
   padding: 20px;
+  min-height: 100vh;
 }
 
 .portfolio h1 {
@@ -110,25 +131,6 @@
   margin-bottom: 10px;
 }
 
-.filters {
-  margin-bottom: 20px;
-}
-
-.filters button {
-  margin-right: 10px;
-  padding: 8px 16px;
-  font-size: 1rem;
-  border: none;
-  background-color: #007bff;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.filters button:hover {
-  background-color: #0056b3;
-}
-
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -136,28 +138,63 @@
 }
 
 .project {
-  background-color: #474646d8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 25rem;
   padding: 20px;
   border-radius: 8px;
+  background-image: linear-gradient(to bottom, transparent, transparent);
+}
+
+.project:hover {
+  opacity: 0.5;
+  transition: 0.5s;
 }
 
 .project h3 {
   margin-bottom: 10px;
   font-size: 1.2rem;
+  text-shadow: 3px 2px 4px #000;
+  font-weight: 500;
+  color: #ffffffee;
+}
+
+.project i {
+  display: none;
+  font-size: 2rem;
+  background-color: #0fa158fd;
+  padding: 1rem;
+  width: 70px;
+  height: 70px;
+  border-radius: 150px;
+  cursor: pointer;
 }
 
 .project p {
   color: #fff;
+  text-align: justify;
+  display: none;
 }
 
+.project:hover p,
+.project:hover i {
+  display: block;
+  transition: 0.7s;
+}
 /* style for testimonials */
 .testimonialSection {
-  display: flex;
-  justify-content: center;
+  background-color: #333333;
+}
+.clientsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .testimonialBox {
-  background-color: #292727cd;
+  background-color: #0f0f0fe7;
   padding: 20px;
   margin: 20px;
   border-radius: 8px;
@@ -219,6 +256,7 @@
 .contact {
   background-color: #121111dd;
   padding: 20px;
+  min-height: 100vh;
   border-radius: 8px;
   padding-bottom: 2rem;
 }
@@ -227,6 +265,7 @@
   font-size: 1rem;
   color: #fff;
   margin-bottom: 20px;
+  padding: 1rem;
 }
 
 .contact form {

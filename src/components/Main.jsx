@@ -1,4 +1,5 @@
 import styles from "./Main.module.css";
+const clients = ["Reobsen", "segni", "Sami", "Abdi"];
 
 const skills = [
   {
@@ -50,23 +51,27 @@ const services = [
 const myWorks = [
   {
     title: "Bankist",
-    description: "ncjndvlwnvvvvvvvdhcbakbb",
-    image: "pexels-pixabay-50987.jpg",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore id adipisci dolorem, illo dicta necessitatibus tenetur quae consequuntur quasi odio",
+    image: "./pexels-pixabay-50987.jpg",
   },
   {
     title: "Forkify-Food-Recipe",
-    description: "ncjndvlwnvvvvvvvdhcbakbb",
-    image: "pexels-ella-olsson-1640777.jpg",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore id adipisci dolorem, illo dicta necessitatibus tenetur quae consequuntur quasi odio",
+    image: "./pexels-ella-olsson-1640777.jpg",
   },
   {
     title: "WorldWise",
-    description: "ncjndvlwnvvvvvvvdhcbakbb",
-    image: "pexels-kaichieh-chan-917510.jpg",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore id adipisci dolorem, illo dicta necessitatibus tenetur quae consequuntur quasi odio",
+    image: "./pexels-kaichieh-chan-917510.jpg",
   },
   {
     title: "UsePopCorn",
-    description: "ncjndvlwnvvvvvvvdhcbakbb",
-    image: "pexels-donald-tong-109669.jpg",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore id adipisci dolorem, illo dicta necessitatibus tenetur quae consequuntur quasi odio",
+    image: "./pexels-donald-tong-109669.jpg",
   },
 ];
 export default function Main() {
@@ -90,10 +95,11 @@ function Welcome() {
     <section className={styles.welcome}>
       <h3>Welcome</h3>
       <h2>
-        Hi, I'm Abdi Kumela <br />A Front_End Web Developer
+        Hi, I'm Abdi Kumela <br />
+        Front-End Web Developer
       </h2>
-      <h4>Based in Adama, Ethiopia.</h4>
-      <button>Let's Talk</button>
+      <h4>Currently Based in Adama, Ethiopia.</h4>
+      <button className={styles.contactBtn}>Let's Talk</button>
     </section>
   );
 }
@@ -125,8 +131,8 @@ function ProgressBar() {
   return (
     <div>
       <h1>Skills</h1>
-      {skills.map((skill) => (
-        <div className={styles.skillContainer}>
+      {skills.map((skill, index) => (
+        <div key={index} className={styles.skillContainer}>
           <span>
             <h3>{skill.skillName}</h3>
             <h3>{skill.experience}%</h3>
@@ -154,8 +160,9 @@ function Service() {
     <section className={styles.servicesSection}>
       <h1>Services</h1>
       <div className={styles.services}>
-        {services.map((service) => (
+        {services.map((service, index) => (
           <div
+            key={index}
             className={styles.service}
             style={{ background: `${service.image}` }}
           >
@@ -178,9 +185,17 @@ function Portfolio() {
       <h1>Portfolio</h1>
       <h2>My Works</h2>
       <div className={styles.projects}>
-        {myWorks.map((work) => (
-          <div className={styles.project}>
+        {myWorks.map((work, index) => (
+          <div
+            className={styles.project}
+            key={index}
+            style={{
+              backgroundImage: `url(${work.image})`,
+              backgroundSize: "cover",
+            }}
+          >
             <h3>{work.title}</h3>
+            <i className="fa-solid fa-link"></i>
             <p>{work.description}</p>
           </div>
         ))}
@@ -191,83 +206,39 @@ function Portfolio() {
 
 function Testimonials() {
   return (
-    <>
+    <section className={styles.testimonialSection}>
       <h1>Testimonial</h1>
-      <section className={styles.testimonialSection}>
-        <div className={styles.testimonialBox}>
-          <i className="fas fa-quote-left quote"></i>
-          <p className={styles.testimonialText}>
-            Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing
-            elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos
-            repellendus repudiandae deleniti ideas fuga molestiae, alias.
-          </p>
-          <div className={styles.testimonialContent}>
-            <div className={styles.testimonialInfo}>
-              <div className={styles.testimonialName}>Alex Smith</div>
-              <div className={styles.testimonialJob}>Designer | Developer</div>
-              <div className={styles.testimonialStars}>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="far fa-star"></i>
-                <i className="far fa-star"></i>
-                <i className="far fa-star"></i>
+      <div className={styles.clientsContainer}>
+        {clients.map((client, index) => (
+          <div key={index} className={styles.testimonialBox}>
+            <i className="fas fa-quote-left quote"></i>
+            <p className={styles.testimonialText}>
+              Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing
+              elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos
+              repellendus repudiandae deleniti ideas fuga molestiae, alias.
+            </p>
+            <div className={styles.testimonialContent}>
+              <div className={styles.testimonialInfo}>
+                <div className={styles.testimonialName}>{client}</div>
+                <div className={styles.testimonialJob}>
+                  Designer | Developer
+                </div>
+                <div className={styles.testimonialStars}>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="far fa-star"></i>
+                  <i className="far fa-star"></i>
+                  <i className="far fa-star"></i>
+                </div>
+              </div>
+              <div className={styles.testimonialImage}>
+                <img src="/img-1.jpg" alt="ProfilePic" />
               </div>
             </div>
-            <div className={styles.testimonialImage}>
-              <img src="/img-1.jpg" alt="ProfilePic" />
-            </div>
           </div>
-        </div>
-        <div className={styles.testimonialBox}>
-          <i className="fas fa-quote-left quote"></i>
-          <p className={styles.testimonialText}>
-            Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing
-            elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos
-            repellendus repudiandae deleniti ideas fuga molestiae, alias.
-          </p>
-          <div className={styles.testimonialContent}>
-            <div className={styles.testimonialInfo}>
-              <div className={styles.testimonialName}>Alex Smith</div>
-              <div className={styles.testimonialJob}>Designer | Developer</div>
-              <div className={styles.testimonialStars}>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="far fa-star"></i>
-                <i className="far fa-star"></i>
-                <i className="far fa-star"></i>
-              </div>
-            </div>
-            <div className={styles.testimonialImage}>
-              <img src="/img-1.jpg" alt="ProfilePic" />
-            </div>
-          </div>
-        </div>
-        <div className={styles.testimonialBox}>
-          <i className="fas fa-quote-left quote"></i>
-          <p className={styles.testimonialText}>
-            Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing
-            elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos
-            repellendus repudiandae deleniti ideas fuga molestiae, alias.
-          </p>
-          <div className={styles.testimonialContent}>
-            <div className={styles.testimonialInfo}>
-              <div className={styles.testimonialName}>Alex Smith</div>
-              <div className={styles.testimonialJob}>Designer | Developer</div>
-              <div className={styles.testimonialStars}>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="far fa-star"></i>
-                <i className="far fa-star"></i>
-                <i className="far fa-star"></i>
-              </div>
-            </div>
-            <div className={styles.testimonialImage}>
-              <img src="/img-1.jpg" alt="ProfilePic" />
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
+        ))}
+      </div>
+    </section>
   );
 }
 
@@ -311,7 +282,6 @@ function Contact() {
 
         <div className={styles.addressContact}>
           <div className={styles.contactInfo}>
-            <h3>CONTACT</h3>
             <p>
               <i className={`fa-solid fa-phone ${styles.icons}`}></i>
               Phone: +251930605760
