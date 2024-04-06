@@ -1,6 +1,5 @@
-import styles from "./Main.module.css";
+import styles from "./Welcome.module.css";
 
-// //////////////////////////////////////////////////////////////////
 export function Welcome() {
   return (
     <section className={styles.welcome}>

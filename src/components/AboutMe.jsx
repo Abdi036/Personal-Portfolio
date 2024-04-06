@@ -1,7 +1,6 @@
-import styles from "./Main.module.css";
+import styles from "./Aboutme.module.css";
 import { skills } from "./Main";
 
-// ///////////////////////////////////////////////////////////////////////
 export function AboutMe() {
   return (
     <section className={styles.aboutme}>

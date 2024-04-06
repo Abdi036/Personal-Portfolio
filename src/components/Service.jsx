@@ -1,4 +1,4 @@
-import styles from "./Main.module.css";
+import styles from "./Service.module.css";
 import { services } from "./Main";
 
 // //////////////////////////////////////////////////////////////////////

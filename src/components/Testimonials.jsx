@@ -1,4 +1,4 @@
-import styles from "./Main.module.css";
+import styles from "./Testimonial.module.css";
 import { clients } from "./Main";
 
 export function Testimonials() {

@@ -1,0 +1,67 @@
+.portfolio {
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.portfolio h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.portfolio h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 25rem;
+  padding: 20px;
+  border-radius: 8px;
+  background-image: linear-gradient(to bottom, transparent, transparent);
+}
+
+.project:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.project h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  text-shadow: 3px 2px 4px #000;
+  font-weight: 500;
+  color: #ffffffee;
+}
+
+.project i {
+  display: none;
+  font-size: 2rem;
+  background-color: #0fa158fd;
+  padding: 1rem;
+  width: 70px;
+  height: 70px;
+  border-radius: 150px;
+  cursor: pointer;
+}
+
+.project p {
+  color: #fff;
+  text-align: justify;
+  display: none;
+}
+
+.project:hover p,
+.project:hover i {
+  display: block;
+  transition: 0.7s;
+}

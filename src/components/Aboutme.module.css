@@ -1,0 +1,23 @@
+.aboutme {
+  min-height: 100vh;
+  padding: 2rem;
+  text-justify: justify;
+  background-color: #0a0a0ac2;
+}
+.aboutme p {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.skillContainer {
+  padding: 1rem;
+}
+.skillContainer span {
+  display: flex;
+  justify-content: space-between;
+}
+.progress {
+  height: 8px;
+  border-radius: 15px;
+  background: #000;
+}

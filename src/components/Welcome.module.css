@@ -1,0 +1,42 @@
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("/pexels-chris-g-1909572.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+.welcome h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px #0cc87d8e;
+}
+
+.welcome h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px #0cc87d8e;
+}
+
+.contactBtn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  background: #000000f8;
+  border: 2px solid #0cc87c;
+  border-radius: 30px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+.contactBtn:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.contactBtn:active {
+  opacity: 1;
+  transition: 0.5s;
+  transform: translateY(3px);
+}

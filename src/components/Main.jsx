@@ -1,4 +1,5 @@
 import styles from "./Main.module.css";
+
 import { AboutMe } from "./AboutMe";
 import { Contact } from "./Contact";
 import { Footer } from "./Footer";

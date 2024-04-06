@@ -1,4 +1,4 @@
-import styles from "./Main.module.css";
+import styles from './Portfolio.module.css'
 import { myWorks } from "./Main";
 
 // //////////////////////////////////////////////////////////////

@@ -1,0 +1,60 @@
+.testimonialSection {
+  background-color: #333333;
+}
+.clientsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.testimonialBox {
+  background-color: #0f0f0fe7;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  width: 300px;
+  min-height: 50vh;
+}
+
+.quote {
+  font-size: 24px;
+  color: #fff;
+}
+
+.testimonialText {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.testimonialContent {
+  display: flex;
+  align-items: center;
+}
+
+.testimonialInfo {
+  flex: 1;
+}
+
+.testimonialName {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.testimonialJob {
+  font-size: 14px;
+  color: #fff;
+}
+
+.testimonialStars {
+  margin-top: 5px;
+  color: #ffc107;
+}
+
+.testimonialImage img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
