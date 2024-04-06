@@ -6,6 +6,8 @@
   left: 0;
   z-index: 2;
   background-color: #0d0d0d;
+  border-right: 3px solid #0cc87da9;
+  box-shadow: inset -3px 0px 4px #0cc87da0;
 }
 
 .profile {
@@ -40,4 +42,14 @@
   align-items: center;
   padding: 1rem;
   gap: 1rem;
+}
+
+.socialMedia > i{
+  font-size: 1.5rem;
+}
+.socialMedia > i:hover {
+  cursor: pointer;
+  color: #0cc87c;
+  transition: 0.5s;
+  transform: translateY(-4px);
 }

@@ -1,7 +1,14 @@
 import styles from "./Main.module.css";
-const clients = ["Reobsen", "segni", "Sami", "Abdi"];
+import { AboutMe } from "./AboutMe";
+import { Contact } from "./Contact";
+import { Footer } from "./Footer";
+import { Portfolio } from "./Portfolio";
+import { Service } from "./Service";
+import { Testimonials } from "./Testimonials";
+import { Welcome } from "./Welcome";
 
-const skills = [
+export const clients = ["Reobsen", "segni", "Sami", "Abdi"];
+export const skills = [
   {
     skillName: "HTML",
     experience: 90,
@@ -21,7 +28,7 @@ const skills = [
 ];
 
 // SERVICES
-const services = [
+export const services = [
   {
     service: "UI/UX Web Designing",
     icon: "fa-solid fa-pen-ruler",
@@ -48,7 +55,7 @@ const services = [
   },
 ];
 
-const myWorks = [
+export const myWorks = [
   {
     title: "Bankist",
     description:
@@ -74,6 +81,8 @@ const myWorks = [
     image: "./pexels-donald-tong-109669.jpg",
   },
 ];
+
+
 export default function Main() {
   return (
     <div className={styles.main}>
@@ -85,225 +94,5 @@ export default function Main() {
       <Contact />
       <Footer />
     </div>
-  );
-}
-
-// //////////////////////////////////////////////////////////////////
-
-function Welcome() {
-  return (
-    <section className={styles.welcome}>
-      <h2>
-        Hi, I'm Abdi Kumela <br />
-        Front-End Web Developer
-      </h2>
-      <h4>Currently Based in Adama, Ethiopia.</h4>
-      <button className={styles.contactBtn}>Let's Talk</button>
-    </section>
-  );
-}
-
-// ///////////////////////////////////////////////////////////////////////
-function AboutMe() {
-  return (
-    <section className={styles.aboutme}>
-      <h1>About Me</h1>
-      <p>
-        Hello! I'm Abdi Kumela, a passionate Front-End Web Developer dedicated
-        to helping businesses establish a strong online presence. With my
-        expertise, I can assist you in building a compelling brand for your
-        business at an affordable price. I believe that a well-designed website
-        is a powerful tool that can effectively communicate your brand's message
-        and values to your target audience. By combining my technical skills
-        with a keen eye for aesthetics, I strive to create visually appealing
-        and user-friendly websites that leave a lasting impression. Whether
-        you're a startup or an established company, I am committed to delivering
-        high-quality web solutions tailored to your specific needs. Let's
-        collaborate and bring your brand's vision to life!
-      </p>
-      <ProgressBar />
-    </section>
-  );
-}
-
-function ProgressBar() {
-  return (
-    <div>
-      <h1>Skills</h1>
-      {skills.map((skill, index) => (
-        <div key={index} className={styles.skillContainer}>
-          <span>
-            <h3>{skill.skillName}</h3>
-            <h3>{skill.experience}%</h3>
-          </span>
-          <div className={styles.progress}>
-            <span
-              style={{
-                background: "#0cc87c",
-                width: `${skill.experience}%`,
-                height: "8px",
-                borderRadius: "15px",
-              }}
-            ></span>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-// //////////////////////////////////////////////////////////////////////
-
-function Service() {
-  return (
-    <section className={styles.servicesSection}>
-      <h1>Services</h1>
-      <div className={styles.services}>
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className={styles.service}
-            style={{ background: `${service.image}` }}
-          >
-            <h2>
-              <i className={`${service.icon} ${styles.icons}`}></i>
-              {service.service}
-            </h2>
-            <p>{service.description}</p>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
-// //////////////////////////////////////////////////////////////
-
-function Portfolio() {
-  return (
-    <section className={styles.portfolio}>
-      <h1>Portfolio</h1>
-      <h2>My Works</h2>
-      <div className={styles.projects}>
-        {myWorks.map((work, index) => (
-          <div
-            className={styles.project}
-            key={index}
-            style={{
-              backgroundImage: `url(${work.image})`,
-              backgroundSize: "cover",
-            }}
-          >
-            <h3>{work.title}</h3>
-            <i className="fa-solid fa-link"></i>
-            <p>{work.description}</p>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
-
-function Testimonials() {
-  return (
-    <section className={styles.testimonialSection}>
-      <h1>Testimonial</h1>
-      <div className={styles.clientsContainer}>
-        {clients.map((client, index) => (
-          <div key={index} className={styles.testimonialBox}>
-            <i className="fas fa-quote-left quote"></i>
-            <p className={styles.testimonialText}>
-              Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing
-              elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos
-              repellendus repudiandae deleniti ideas fuga molestiae, alias.
-            </p>
-            <div className={styles.testimonialContent}>
-              <div className={styles.testimonialInfo}>
-                <div className={styles.testimonialName}>{client}</div>
-                <div className={styles.testimonialJob}>
-                  Designer | Developer
-                </div>
-                <div className={styles.testimonialStars}>
-                  <i className="fas fa-star"></i>
-                  <i className="fas fa-star"></i>
-                  <i className="far fa-star"></i>
-                  <i className="far fa-star"></i>
-                  <i className="far fa-star"></i>
-                </div>
-              </div>
-              <div className={styles.testimonialImage}>
-                <img src="/img-1.jpg" alt="ProfilePic" />
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
-
-function Contact() {
-  return (
-    <section className={styles.contact}>
-      <h1>Contact</h1>
-      <div className={styles.contactWraper}>
-        <form>
-          <div className={styles.formGroup}>
-            <label htmlFor="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your name"
-              required
-            />
-          </div>
-          <div className={styles.formGroup}>
-            <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your email"
-              required
-            />
-          </div>
-          <div className={styles.formGroup}>
-            <label htmlFor="message">Message:</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Your message"
-              required
-            ></textarea>
-          </div>
-          <button type="submit">Send</button>
-        </form>
-
-        <div className={styles.addressContact}>
-          <div className={styles.contactInfo}>
-            <p>
-              <i className={`fa-solid fa-phone ${styles.icons}`}></i>
-              Phone: +251930605760
-            </p>
-            <p>
-              <i className={`fa-regular fa-envelope  ${styles.icons}`}></i>
-              Email: abdikumela036@gmail.com
-            </p>
-            <p>
-              <i className={`fa-brands fa-telegram ${styles.icons}`}></i>
-              Telegram : @Abdi036
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function Footer() {
-  return (
-    <footer className={styles.footer}>
-      Copyright © 2024 Abdi. All Rights Reserved.
-    </footer>
   );
 }
