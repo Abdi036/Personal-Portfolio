@@ -1,7 +1,6 @@
 import styles from "./Service.module.css";
 import { services } from "./Main";
 
-// //////////////////////////////////////////////////////////////////////
 export function Service() {
   return (
     <section className={styles.servicesSection}>

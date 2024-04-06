@@ -7,7 +7,7 @@
   z-index: 2;
   background-color: #0d0d0d;
   border-right: 3px solid #0cc87da9;
-  box-shadow: inset -3px 0px 4px #0cc87da0;
+  box-shadow: inset -3px 1px 4px #0cc87da0;
 }
 
 .profile {
@@ -34,6 +34,11 @@
   padding: 0.5rem 2rem 0.8rem;
   font-size: large;
   font-weight: 600;
+  cursor: pointer;
+}
+.navbar ul > li:hover {
+  color: #0cd585de;
+  text-decoration: underline;
 }
 
 .socialMedia {
@@ -44,7 +49,7 @@
   gap: 1rem;
 }
 
-.socialMedia > i{
+.socialMedia > i {
   font-size: 1.5rem;
 }
 .socialMedia > i:hover {

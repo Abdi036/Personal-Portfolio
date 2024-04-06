@@ -12,13 +12,13 @@
 .welcome h2 {
   font-size: 3rem;
   font-weight: 700;
-  text-shadow: 2px 2px 4px #0cc87d8e;
+  text-shadow: 2px 2px 4px #000;
 }
 
 .welcome h4 {
   font-size: 1.4rem;
   font-weight: 600;
-  text-shadow: 2px 2px 4px #0cc87d8e;
+  text-shadow: 2px 2px 4px #000;
 }
 
 .contactBtn {

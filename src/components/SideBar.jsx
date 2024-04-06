@@ -13,7 +13,7 @@ function Profile() {
   return (
     <div className={styles.profile}>
       <img src="./img-1.jpg" alt="Profile Picrute" />
-      <h3>USER NAME</h3>
+      <h3>Abdi Kumela</h3>
     </div>
   );
 }
