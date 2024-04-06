@@ -34,7 +34,7 @@
   min-height: 100vh;
   padding: 2rem;
   text-justify: justify;
-  background-color: #1f1f1f73;
+  background-color: #0a0a0ac2;
 }
 .aboutme p {
   font-weight: 600;
@@ -49,7 +49,7 @@
   justify-content: space-between;
 }
 .progress {
-   height: 8px;
+  height: 8px;
   border-radius: 15px;
   background: #000;
 }
@@ -60,27 +60,38 @@
   flex-direction: column;
   justify-content: center;
   min-height: 50vh;
-  background-color: #121212d1;
+  padding: 2rem 0;
+  background-color: #232323;
 }
 .services {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 10px;
 }
 
 .service {
-  width: 300px;
+  width: 500px;
   padding: 20px;
   margin: 20px;
-  background-color: #212020;
+  background-color: #111010e4;
   color: #fff;
   border-radius: 8px;
-  text-align: center;
+  text-justify: justify;
 }
 
 .service h2 {
   margin-bottom: 10px;
+  color: #0cc87c;
+}
+.service p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffffc2;
+}
+
+.icons {
+  padding: 2rem;
+  font-size: 1.5rem;
 }
 
 /* portfolio.css */
