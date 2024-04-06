@@ -93,7 +93,6 @@ export default function Main() {
 function Welcome() {
   return (
     <section className={styles.welcome}>
-      <h3>Welcome</h3>
       <h2>
         Hi, I'm Abdi Kumela <br />
         Front-End Web Developer

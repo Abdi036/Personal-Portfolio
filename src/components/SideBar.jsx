@@ -36,9 +36,11 @@ function NavBar() {
 function SocialMedias() {
   return (
     <div className={styles.socialMedia}>
-      <h3>X</h3>
-      <h3>X</h3>
-      <h3>X</h3>
+      <i className="fa-brands fa-github"></i>
+      <i className="fa-brands fa-linkedin"></i>
+      <i className="fa-brands fa-telegram"></i>
+      <i className="fa-brands fa-square-x-twitter"></i>
+      <i className=" fa-brands fa-instagram"></i>
     </div>
   );
 }

@@ -20,20 +20,18 @@
   font-weight: 700;
   text-shadow: 2px 2px 4px #0cc87d8e;
 }
-.welcome h3 {
-  font-size: 2rem;
-  font-weight: 600;
-}
+
 .welcome h4 {
   font-size: 1.4rem;
   font-weight: 600;
+  text-shadow: 2px 2px 4px #0cc87d8e;
 }
 
 .contactBtn {
   padding: 1rem 2rem;
   font-size: 1rem;
   font-weight: 400;
-  background: #0000007e;
+  background: #000000f8;
   border: 2px solid #0cc87c;
   border-radius: 30px;
   margin-top: 1.5rem;
@@ -301,7 +299,7 @@
 button[type="submit"] {
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: #007bff;
+  background-color: #0cc87c;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -310,7 +308,12 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #0056b3;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+button[type="submit"]:active {
+  opacity: 1;
+  transition: 0.5s;
 }
 
 .addressContact {
