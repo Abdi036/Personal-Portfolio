@@ -1,5 +1,4 @@
 .main {
-  border: 2px solid yellow;
   flex: 1;
   width: 80%;
   margin-left: 20%;
@@ -16,15 +15,46 @@
   background-position: center;
   height: 98.5vh;
 }
-
-.aboutme {
-  height: 100vh;
-  padding: 2rem;
-  text-align: center;
-  background-color: #1f1f1f73;
+.welcome h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.welcome h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.welcome h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
-/* styles.css */
+/* About me section */
+
+.aboutme {
+  min-height: 100vh;
+  padding: 2rem;
+  text-justify: justify;
+  background-color: #1f1f1f73;
+}
+.aboutme p {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.skillContainer {
+  padding: 1rem;
+}
+.skillContainer span {
+  display: flex;
+  justify-content: space-between;
+}
+.progress {
+   height: 8px;
+  border-radius: 15px;
+  background: #000;
+}
+
+/*service styles.css */
 .servicesSection {
   display: flex;
   flex-direction: column;

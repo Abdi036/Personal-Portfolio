@@ -1,13 +1,11 @@
 .sidebar {
-  border: 2px solid green;
   width: 20%;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   z-index: 2;
-  overflow-y: auto;
-  background-color: #2a2a2af1;
+  background-color: #0f0e0ec2;
 }
 
 .profile {
@@ -37,9 +35,9 @@
 }
 
 .socialMedia {
-  border: 2px solid blue;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  padding: 1rem;
+  gap: 1rem;
 }

@@ -1,4 +1,23 @@
 import styles from "./Main.module.css";
+
+const skills = [
+  {
+    skillName: "HTML",
+    experience: 90,
+  },
+  {
+    skillName: "CSS",
+    experience: 80,
+  },
+  {
+    skillName: "Javascript",
+    experience: 75,
+  },
+  {
+    skillName: "React",
+    experience: 70,
+  },
+];
 export default function Main() {
   return (
     <div className={styles.main}>
@@ -16,8 +35,10 @@ export default function Main() {
 function Welcome() {
   return (
     <section className={styles.welcome}>
-      <h2>Welcome</h2>
-      <h2>I'm Abdi Kumela Web Developer</h2>
+      <h3>Welcome</h3>
+      <h2>
+        Hi, I'm Abdi Kumela <br />A Front_End Web Developer
+      </h2>
       <h4>Based in Adama, Ethiopia.</h4>
       <button>Let's Talk</button>
     </section>
@@ -29,15 +50,46 @@ function AboutMe() {
     <section className={styles.aboutme}>
       <h1>About Me</h1>
       <p>
-        I'm Simone Olivia, a Web Developer I help you build brand for your
-        business at an affordable price. Thousands of clients have procured
-        exceptional results while working with our dedicated team. when an
-        unknown printer took a galley of type and scrambled it to make a type
-        specimen book. Delivering work within time and budget which meets
-        client's requirements is our moto. Lorem Ipsum has been the industry's
-        standard dummy text ever when an unknown printer took a galley.
+        Hello! I'm Abdi Kumela, a passionate Front-End Web Developer dedicated
+        to helping businesses establish a strong online presence. With my
+        expertise, I can assist you in building a compelling brand for your
+        business at an affordable price. I believe that a well-designed website
+        is a powerful tool that can effectively communicate your brand's message
+        and values to your target audience. By combining my technical skills
+        with a keen eye for aesthetics, I strive to create visually appealing
+        and user-friendly websites that leave a lasting impression. Whether
+        you're a startup or an established company, I am committed to delivering
+        high-quality web solutions tailored to your specific needs. Let's
+        collaborate and bring your brand's vision to life!
       </p>
+      <ProgressBar />
     </section>
+  );
+}
+
+function ProgressBar() {
+  return (
+    <div>
+      <h1>Skills</h1>
+      {skills.map((skill) => (
+        <div className={styles.skillContainer}>
+          <span>
+            <h3>{skill.skillName}</h3>
+            <h3>{skill.experience}%</h3>
+          </span>
+          <div className={styles.progress}>
+            <span
+              style={{
+                background: "#0cc87c",
+                width: `${skill.experience}%`,
+                height: "8px",
+                borderRadius: "15px",
+              }}
+            ></span>
+          </div>
+        </div>
+      ))}
+    </div>
   );
 }
 
