@@ -6,13 +6,15 @@
   left: 0;
   z-index: 2;
   background-color: #0d0d0d;
-  border-right: 3px solid #0cc87da9;
-  box-shadow: inset -3px 1px 4px #0cc87da0;
+  border-right: 2px solid gray;
+  /* border-right: 3px solid #0cc87da9; */
+  /* box-shadow: inset -3px 1px 4px #0cc87da0; */
 }
 
 .profile {
   text-align: center;
   padding: 2rem 0 0 0;
+  /* border-bottom: 2px solid #808080; */
 }
 
 .profile img {
@@ -36,9 +38,21 @@
   font-weight: 600;
   cursor: pointer;
 }
-.navbar ul > li:hover {
-  color: #0cd585de;
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: #5cc566;
   text-decoration: underline;
+}
+/* .navbar a:active {
+  color: #0cc87c;
+  text-decoration: underline;
+} */
+
+.navbar a.active {
+  color: #0cc87c;
 }
 
 .socialMedia {

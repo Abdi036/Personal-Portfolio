@@ -2,7 +2,7 @@ import styles from "./Contact.module.css";
 
 export function Contact() {
   return (
-    <section className={styles.contact}>
+    <section className={styles.contact} id="contact">
       <h1>Contact</h1>
       <div className={styles.contactWraper}>
         <form>

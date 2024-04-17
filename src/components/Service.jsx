@@ -3,7 +3,7 @@ import { services } from "./Main";
 
 export function Service() {
   return (
-    <section className={styles.servicesSection}>
+    <section className={styles.servicesSection} id="service">
       <h1>Services</h1>
       <div className={styles.services}>
         {services.map((service, index) => (

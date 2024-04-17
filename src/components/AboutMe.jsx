@@ -3,7 +3,7 @@ import { skills } from "./Main";
 
 export function AboutMe() {
   return (
-    <section className={styles.aboutme}>
+    <section className={styles.aboutme} id="about_me">
       <h1>About Me</h1>
       <p>
         Hello! I'm Abdi Kumela, a passionate Front-End Web Developer dedicated

@@ -1,10 +1,10 @@
-import styles from './Portfolio.module.css'
+import styles from "./Portfolio.module.css";
 import { myWorks } from "./Main";
 
 // //////////////////////////////////////////////////////////////
 export function Portfolio() {
   return (
-    <section className={styles.portfolio}>
+    <section className={styles.portfolio} id="portfolio">
       <h1>Portfolio</h1>
       <h2>My Works</h2>
       <div className={styles.projects}>

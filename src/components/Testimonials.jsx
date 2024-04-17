@@ -3,7 +3,7 @@ import { clients } from "./Main";
 
 export function Testimonials() {
   return (
-    <section className={styles.testimonialSection}>
+    <section className={styles.testimonialSection} id="testimonial">
       <h1>Testimonial</h1>
       <div className={styles.clientsContainer}>
         {clients.map((client, index) => (
